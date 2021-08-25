@@ -1,0 +1,171 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+}
+
+/*MAIN*/
+
+main{ 
+    display: flex;
+    justify-content: center;
+}
+
+.contenedo-main{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: stretch;
+    padding: 60px;
+    border: solid 1px rgb(185, 185, 185);
+    border-radius: 10px;
+    box-shadow:7px 5px 10px rgb(185, 185, 185);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+
+.columna1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+    margin: 15px;  
+}
+
+.columna2{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.columna3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: stretch;
+    border: solid 1px rgb(185, 185, 185);
+    border-radius: 15px;
+    box-shadow: 7px 5px 10px rgb(185, 185, 185);
+    padding: 10px;
+    margin-left: 10px;
+    background-color: blanchedalmond;
+}
+
+
+.shadow{
+    border: solid 1px rgb(185, 185, 185);
+    border-radius: 5px;
+    box-shadow: 7px 5px 10px rgb(185, 185, 185);
+    background-color: blanchedalmond;
+}
+
+.ingresa{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+.botones-compra{
+    display: flex;
+    justify-content: center;
+    border:transparent;
+    border-radius: 7px;
+    background-color: rgb(61, 107, 255);
+    color: white;
+    font-size: 25px;
+}
+
+.botones-carrito{
+    display: flex;
+    justify-content: center;
+    border:none;
+    background-color: #fff;
+    color: rgb(61, 107, 255);
+    font-size: 18px;
+}
+
+.compra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+
+/*TELEFONO*/
+
+@media (max-width: 600px){
+
+
+.columna1{
+    display: none;
+}
+
+.contenedo-main{
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    width: 100%;
+}
+
+.medios-de-pago{
+    display: none;
+}
+
+.columnas{
+    display: flex;
+    flex-direction: column;
+}
+
+.columna2{
+    border:none;
+    width:fit-content;
+    margin: 0;
+    padding: 0;
+}
+
+.columna3{
+    border:none;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shadow{
+    align-items:flex-start;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+}
+
+.nombre{
+    font-size: 25px;
+}
+
+.precio{
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+.compra{
+    margin-top: 30px;
+}
+
+.botones-carrito{
+    margin-top: 15px;
+}
+
+}

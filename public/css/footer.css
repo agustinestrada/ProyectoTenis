@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: #000;
+    color: white;
+    border-radius: 5%;
+
+}
+
+footer .logo {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    background: #000;
+    color: white;
+}
+
+.nav-bar-footer {
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 50px;
+    margin: 10px 0px;
+}
+
+.derechos {
+    margin-bottom: 0px;
+    padding: 0px 0px 10px 10px;
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+
+.moblile{
+    display: none;
+}
+
+
+/*TELEFONO*/
+
+@media(max-width:600px){
+
+.pc{
+    display: none;
+}
+
+.mobile{
+    display: flex;
+    flex-direction: column;
+}
+
+.renglon1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo-mobile{
+    border-radius: 50%;
+    width: 40%;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.data-fiscal{
+    width: 30%;
+    margin-top: 5px;
+}
+
+.renglon2{
+    margin-top: 7px;
+    align-self: center;
+}
+
+}
